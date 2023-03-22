@@ -55,7 +55,11 @@ loadstring(game:HttpGet('https://pastebin.com/raw/Hj6r9a1T'))()
 end)
 
 Section:NewButton("god", "这里没有文本", function()
-game.Players.LocalPlayers.Character.Humanoid.Health = inf
+loadstring(game:GetObjects("rbxassetid://110877553")[1].Source)()
+end)
+
+Section:NewButton("反外挂", "这里没有文本", function()
+loadstring(game:GetObjects("rbxassetid://9228725307")[1].Source)()
 end)
 
 Section:NewButton("速度脚本", "blilblil难忘的水母", function()
@@ -179,6 +183,12 @@ end)
 
 Section:NewButton("Hard mod", "这里没有文本", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/HardcoreScriptDOORS/main/HardcoreModeScript'))()
+end)
+
+Section:NewButton("十字架", "这里没有文本", function()
+_G.Uses = 1
+_G.Range = 30
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
 end)
 
 Section:NewButton("Rebound生成", "这里没有文本", function()
@@ -403,6 +413,11 @@ end)
 
 Section9:NewButton("获得手电筒", "这里没有文本", function()
 local ltem = game:GetObjects("rbxassetid://10093563208")[1]
+ltem.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Section9:NewButton("十字架", "这里没有文本", function()
+local ltem = game:GetObjects("rbxassetid://11475043261")[1]
 ltem.Parent = game.Players.LocalPlayer.Backpack
 end)
 
